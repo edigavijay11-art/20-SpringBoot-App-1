@@ -6,12 +6,20 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SbWebApplication {
 
-	privat static final String REST_URL ="htps://www.equifax.com/getScores";
+ 	
+  private Map<String,Object> cache = new HasMap<String,Object>
+ 
+  privat static final String REST_URL ="htps://www.equifax.com/getScores";
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 		int a=10;
 	}
+	//HIS-301 changes
+	public void loadDataToCache(){
+	   //logic
+        }
 
 	// HIS-200 related changes
 	public void createNew(){
